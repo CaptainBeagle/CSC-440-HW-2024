@@ -55,7 +55,7 @@ class TestServer(BaseHTTPRequestHandler):
                 self.end_headers()
                 result = {
                     "status": 200,
-                    "html": open("Register.html") #try using separate file with form only
+                    "html": open("RegPage.html")
                 }
                 self.wfile.write(bytes(json.dumps(result), "UTF-8"))    
     
